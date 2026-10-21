@@ -176,11 +176,13 @@ html[data-theme="dark"] .bz>.core{box-shadow:inset 0 1px 1px rgba(255,255,255,.1
 .gal figcaption{margin-top:16px;font-size:21px;font-weight:500;color:var(--mute);white-space:nowrap}
 .gal figcaption b{display:block;font-size:25px;font-weight:800;color:var(--ink);letter-spacing:-.02em;margin-bottom:2px}
 .gstat{display:flex;align-items:center;gap:30px;padding:24px 40px;border-radius:30px;background:linear-gradient(120deg,rgba(18,181,245,.1),rgba(30,107,255,.08),rgba(176,108,245,.12));box-shadow:0 0 0 1px var(--line) inset;box-sizing:border-box}
-.gstat .big{display:flex;align-items:baseline;font:800 108px/1 Sora,Pretendard;letter-spacing:-.05em}
-.gstat .big small{font-family:Pretendard;font-size:52px;letter-spacing:-.03em;margin-left:6px}
-.gstat .tx b{display:block;font-size:32px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
-.gstat .tx span{display:block;font-size:24px;font-weight:500;color:var(--sub);margin-top:6px;white-space:nowrap}
-.gstat .sep{width:1px;align-self:stretch;background:var(--line);margin:0 12px}
+.gstat .tx>b{display:block;font-size:32px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+.gstat .tx>span:not(.tools){display:block;font-size:24px;font-weight:500;color:var(--sub);margin-top:6px;white-space:nowrap}
+.gstat .garw{font:300 56px/1 Sora,sans-serif;color:var(--brand);opacity:.8;margin:0 8px}
+.gstat .tools{display:flex;gap:12px;margin-top:12px}
+.gstat .tools i{font-style:normal;display:inline-flex;align-items:center;gap:9px;padding:4px 16px 4px 5px;border-radius:999px;background:var(--pill-bg);box-shadow:0 0 0 1px var(--line) inset;font-size:21px;font-weight:700;color:var(--ink);white-space:nowrap}
+.bi.xs{width:30px;height:30px;border-radius:50%} .bi.xs svg{width:18px;height:18px} .bi.xs .bdg{font-size:15px}
+.bdg.r{background:#000;color:#fff}.bdg.h{background:#0b1330;color:#d6ff3a}
 .webline{display:flex;align-items:center;gap:12px}
 .webline img{width:104px;height:78px;object-fit:cover;object-position:50% 0;border-radius:12px;box-shadow:0 0 0 1px var(--line)}
 .webline span{margin-left:14px}
@@ -503,10 +505,10 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
     <figure data-step="1" data-fx="tilt" data-at=".48"><div class="mf" style="width:396px"><img src="assets/img/ads/wolnamok.jpg" alt="월남옥 봉선점 음식 사진 SNS 콘텐츠"><span class="kind">SNS 카드</span></div><figcaption><b>월남옥 봉선점</b>음식점 · 봉선동</figcaption></figure>
   </div>
   <div class="abs gstat" style="left:144px;top:800px;width:1632px" data-step="2" data-fx="rise">
-    <div class="big"><span class="g"><span data-count>27</span></span><small>만</small></div>
-    <div class="tx"><b>숏폼 클립 조회수</b><span>Lei hou · 광주 일곡동 음식점</span></div>
-    <i class="sep"></i>
-    <div class="tx"><b>사진 촬영부터 숏폼 · SNS 콘텐츠 제작까지</b><span>업종에 맞춘 광고 콘텐츠를 직접 만들고 실행했습니다</span></div>
+    <div class="tx"><b>실사 콘텐츠 성과를 바탕으로</b><span>사진 촬영부터 숏폼 · SNS 콘텐츠 제작까지 직접</span></div>
+    <span class="garw">→</span>
+    <div class="tx"><b><span class="g">AI 기반 영상 제작</span></b>
+      <span class="tools" data-step="2" data-fx="pops" data-at=".5"><i><span class="bi xs" data-ic="higgsfield"></span>Higgsfield</i><i><span class="bi xs" data-ic="runway"></span>Runway</i><i><span class="bi xs" data-ic="bytedance"></span>Seedance</i><i><span class="bi xs" data-ic="google"></span>Google Veo</i></span></div>
   </div>
 </section>
 
@@ -725,6 +727,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
   </div>
   <div class="sg" style="left:992px;top:660px" data-step="2" data-fx="rows" data-at=".2">
     <h3>Design · Tools</h3>
+    <div class="sr"><span class="bi sm" data-ic="bytedance"></span><span class="nm">Seedance 2.5</span><div class="track"><div class="fill" data-grow="x" style="width:80%"></div></div><span class="lv">고급</span></div>
     <div class="sr"><span class="bi sm" data-ic="figma"></span><span class="nm">Figma</span><div class="track"><div class="fill" data-grow="x" style="width:80%"></div></div><span class="lv">고급</span></div>
     <div class="sr"><span class="bi sm" data-ic="photoshop"></span><span class="nm">Photoshop</span><div class="track"><div class="fill" data-grow="x" style="width:60%"></div></div><span class="lv">중급</span></div>
     <div class="sr"><span class="bi sm" data-ic="illustrator"></span><span class="nm">Illustrator</span><div class="track"><div class="fill" data-grow="x" style="width:60%"></div></div><span class="lv">중급</span></div>
