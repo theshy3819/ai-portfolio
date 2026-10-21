@@ -166,6 +166,21 @@ html[data-theme="dark"] .bz>.core{box-shadow:inset 0 1px 1px rgba(255,255,255,.1
 .ind .cw{display:flex;flex-wrap:wrap;gap:10px}
 .ind .cw i{font-style:normal;padding:7px 18px;border-radius:999px;background:var(--soft);box-shadow:0 0 0 1px var(--line) inset;font-size:26px;font-weight:700;letter-spacing:-.02em;white-space:nowrap}
 .ind .more{margin:14px 0 0;font-size:22px;font-weight:600;color:var(--mute)}
+/* 06 광고 콘텐츠 갤러리 */
+.gal{display:flex;gap:24px;align-items:flex-start}
+.gal figure{margin:0}
+.gal .mf{position:relative;height:396px;border-radius:22px;overflow:hidden;background:var(--soft);box-shadow:0 0 0 1px var(--line),0 30px 60px -34px rgba(30,107,255,.45)}
+.gal .mf img{display:block;width:100%;height:100%;object-fit:cover}
+.gal .kind{position:absolute;left:12px;top:12px;display:inline-flex;align-items:center;gap:7px;padding:4px 12px;border-radius:999px;background:rgba(11,19,48,.62);color:#fff;font-size:18px;font-weight:700}
+.gal .kind.play::before{content:"";border-left:9px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.gal figcaption{margin-top:16px;font-size:21px;font-weight:500;color:var(--mute);white-space:nowrap}
+.gal figcaption b{display:block;font-size:25px;font-weight:800;color:var(--ink);letter-spacing:-.02em;margin-bottom:2px}
+.gstat{display:flex;align-items:center;gap:30px;padding:24px 40px;border-radius:30px;background:linear-gradient(120deg,rgba(18,181,245,.1),rgba(30,107,255,.08),rgba(176,108,245,.12));box-shadow:0 0 0 1px var(--line) inset;box-sizing:border-box}
+.gstat .big{display:flex;align-items:baseline;font:800 108px/1 Sora,Pretendard;letter-spacing:-.05em}
+.gstat .big small{font-family:Pretendard;font-size:52px;letter-spacing:-.03em;margin-left:6px}
+.gstat .tx b{display:block;font-size:32px;font-weight:800;letter-spacing:-.03em;white-space:nowrap}
+.gstat .tx span{display:block;font-size:24px;font-weight:500;color:var(--sub);margin-top:6px;white-space:nowrap}
+.gstat .sep{width:1px;align-self:stretch;background:var(--line);margin:0 12px}
 .webline{display:flex;align-items:center;gap:12px}
 .webline img{width:104px;height:78px;object-fit:cover;object-position:50% 0;border-radius:12px;box-shadow:0 0 0 1px var(--line)}
 .webline span{margin-left:14px}
@@ -442,7 +457,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
   </div>
 </section>
 
-<!-- ================= 05 광고 실행 (사진·릴스는 받으면 이 장 뒤 갤러리로) ================= -->
+<!-- ================= 05 광고 실행 ================= -->
 <section class="slide" data-name="ad" data-pg="05" data-label="05 다양한 업체의 광고를 직접 실행했습니다">
   <div class="glow" style="--o:.14;width:820px;height:820px;right:-240px;top:200px;--c:var(--violet)"></div>
   <h2 class="ttl"><span class="m">다양한 업체의</span> 광고를 직접 실행했습니다</h2>
@@ -472,8 +487,28 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
   </div>
 </section>
 
-<!-- ================= 06 프로젝트 셋 ================= -->
-<section class="slide" data-name="pj" data-pg="06" data-label="06 AI · 웹 · 로봇, 세 개의 팀 프로젝트">
+<!-- ================= 06 직접 만든 광고 콘텐츠 ================= -->
+<section class="slide" data-name="adg" data-pg="06" data-label="06 직접 만든 광고 콘텐츠">
+  <div class="glow" style="--o:.14;width:860px;height:860px;left:-260px;top:240px;--c:var(--sky)"></div>
+  <div class="glow" style="--o:.12;width:760px;height:760px;right:-240px;top:-260px;--c:var(--violet);animation-duration:23s"></div>
+  <h2 class="ttl"><span class="m">직접 만든</span> 광고 콘텐츠</h2>
+  <div class="abs gal" style="left:144px;top:292px;width:1632px">
+    <figure data-step="1" data-fx="tilt"><div class="mf" style="width:198px"><img src="assets/img/ads/leihou-clip.png" alt="Lei hou 광주 일곡동 음식점 숏폼 클립 화면, 조회 27만"><span class="kind play">숏폼</span></div><figcaption><b>Lei hou</b>음식점 · 일곡동</figcaption></figure>
+    <figure data-step="1" data-fx="tilt" data-at=".12"><div class="mf" style="width:223px"><img src="assets/img/ads/cloud-aewol.jpg" alt="제주 애월 돌담 숙소 Cloud 애월 릴스 화면"><span class="kind play">릴스</span></div><figcaption><b>Cloud 애월</b>숙소 · 제주 애월</figcaption></figure>
+    <figure data-step="1" data-fx="tilt" data-at=".24"><div class="mf" style="width:317px"><img src="assets/img/ads/maisondel-open.jpg" alt="광주 신상 웨딩홀 MESION DE L 그랜드 오픈 홍보물"><span class="kind">오픈 홍보</span></div><figcaption><b>MESION DE L</b>웨딩홀 · 그랜드 오픈</figcaption></figure>
+    <figure data-step="1" data-fx="tilt" data-at=".36"><div class="mf" style="width:396px"><img src="assets/img/ads/bonjourdog.jpg" alt="광주 베이커리 BONJOUR DOG BAKE SHOP 크리스마스 케이크 SNS 콘텐츠"><span class="kind">SNS 카드</span></div><figcaption><b>BONJOUR DOG BAKE SHOP</b>베이커리 카페 · 크리스마스 시즌</figcaption></figure>
+    <figure data-step="1" data-fx="tilt" data-at=".48"><div class="mf" style="width:396px"><img src="assets/img/ads/wolnamok.jpg" alt="월남옥 봉선점 음식 사진 SNS 콘텐츠"><span class="kind">SNS 카드</span></div><figcaption><b>월남옥 봉선점</b>음식점 · 봉선동</figcaption></figure>
+  </div>
+  <div class="abs gstat" style="left:144px;top:800px;width:1632px" data-step="2" data-fx="rise">
+    <div class="big"><span class="g"><span data-count>27</span></span><small>만</small></div>
+    <div class="tx"><b>숏폼 클립 조회수</b><span>Lei hou · 광주 일곡동 음식점</span></div>
+    <i class="sep"></i>
+    <div class="tx"><b>사진 촬영부터 숏폼 · SNS 콘텐츠 제작까지</b><span>업종에 맞춘 광고 콘텐츠를 직접 만들고 실행했습니다</span></div>
+  </div>
+</section>
+
+<!-- ================= 07 프로젝트 셋 ================= -->
+<section class="slide" data-name="pj" data-pg="07" data-label="07 AI · 웹 · 로봇, 세 개의 팀 프로젝트">
   <div class="glow" style="--o:.12;width:900px;height:900px;left:500px;top:300px;--c:var(--brand)"></div>
   <h2 class="ttl"><span class="m">AI · 웹 · 로봇,</span> 세 개의 팀 프로젝트</h2>
   <div class="bz pj hot beam" style="left:144px;top:290px;width:522px;height:640px" data-step="1" data-fx="flip">
@@ -503,7 +538,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 07 Lumi ================= -->
-<section class="slide" data-name="lumi" data-pg="07" data-label="07 Lumi · 저시력자를 위한 AI 기반 실내 안전 동행 로봇">
+<section class="slide" data-name="lumi" data-pg="08" data-label="08 Lumi · 저시력자를 위한 AI 기반 실내 안전 동행 로봇">
   <div class="glow" style="--o:.16;width:860px;height:860px;right:-200px;top:120px;--c:#ff9a3d"></div>
   <h2 class="ttl"><span class="m">저시력자를 위한</span> AI 기반 실내 안전 동행 로봇</h2>
   <div class="pcol">
@@ -518,7 +553,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 08 Lumi 구조 ================= -->
-<section class="slide" data-name="lumiA" data-pg="08" data-label="08 로봇 데이터가 관제 화면까지">
+<section class="slide" data-name="lumiA" data-pg="09" data-label="09 로봇 데이터가 관제 화면까지">
   <div class="glow" style="--o:.12;width:800px;height:800px;right:-300px;top:-200px;--c:var(--sky)"></div>
   <h2 class="ttl"><span class="m">로봇 데이터가</span> 관제 화면까지</h2>
   <p class="lane" style="left:144px;top:290px" data-step="1" data-fx="fade">로봇 · 팀원 담당</p>
@@ -553,7 +588,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 09 COSMOS ================= -->
-<section class="slide" data-name="cos" data-pg="09" data-label="09 COSMOS · 빅데이터 기반 AI 활용 기업 관계 시각화 서비스">
+<section class="slide" data-name="cos" data-pg="10" data-label="10 COSMOS · 빅데이터 기반 AI 활용 기업 관계 시각화 서비스">
   <div class="glow" style="--o:.18;width:900px;height:900px;right:-220px;top:80px;--c:#5b3fff"></div>
   <h2 class="ttl"><span class="m">빅데이터 기반</span> AI 활용 기업 관계 시각화 서비스</h2>
   <div class="pcol">
@@ -570,7 +605,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 10 COSMOS 구조 ================= -->
-<section class="slide" data-name="cosA" data-pg="10" data-label="10 관계 데이터가 3D 은하까지">
+<section class="slide" data-name="cosA" data-pg="11" data-label="11 관계 데이터가 3D 은하까지">
   <div class="glow" style="--o:.14;width:800px;height:800px;left:-280px;top:400px;--c:var(--violet)"></div>
   <h2 class="ttl"><span class="m">관계 데이터가</span> 3D 은하까지</h2>
   <p class="lane" style="left:144px;top:270px" data-step="1" data-fx="fade">데이터 · 백엔드 — 팀원 담당</p>
@@ -602,7 +637,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 11 주만추 ================= -->
-<section class="slide" data-name="jum" data-pg="11" data-label="11 주만추 · 스와이프로 만나는 장기투자 종목 추천 서비스">
+<section class="slide" data-name="jum" data-pg="12" data-label="12 주만추 · 스와이프로 만나는 장기투자 종목 추천 서비스">
   <div class="glow" style="--o:.16;width:860px;height:860px;right:-220px;top:120px;--c:#ff4fa3"></div>
   <h2 class="ttl"><span class="m">스와이프로 만나는</span> 장기투자 종목 추천 서비스</h2>
   <div class="pcol">
@@ -617,7 +652,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 12 주만추 구조 ================= -->
-<section class="slide" data-name="jumA" data-pg="12" data-label="12 시세와 추천 점수가 스와이프 카드까지">
+<section class="slide" data-name="jumA" data-pg="13" data-label="13 시세와 추천 점수가 스와이프 카드까지">
   <div class="glow" style="--o:.12;width:800px;height:800px;right:-300px;top:-200px;--c:#ff4fa3"></div>
   <h2 class="ttl"><span class="m">시세와 추천 점수가</span> 스와이프 카드까지</h2>
   <p class="lane" style="left:144px;top:270px" data-step="1" data-fx="fade">데이터 · 백엔드 — 팀원 담당</p>
@@ -654,7 +689,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 13 스킬 ================= -->
-<section class="slide" data-name="sk" data-pg="13" data-label="13 기술 스택과 숙련도">
+<section class="slide" data-name="sk" data-pg="14" data-label="14 기술 스택과 숙련도">
   <div class="glow" style="--o:.12;width:800px;height:800px;left:-260px;top:-260px;--c:var(--sky)"></div>
   <h2 class="ttl"><span class="m">기술 스택과</span> 숙련도</h2>
   <p class="legend" data-step="0" data-fx="fade"><span><i style="width:16px"></i>기초</span><span><i style="width:32px"></i>초급</span><span><i style="width:48px"></i>중급 · 문서 보며 독립 개발</span><span><i style="width:64px"></i>고급 · 프로젝트 주도 활용</span></p>
@@ -696,7 +731,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 14 기여 방향 ================= -->
-<section class="slide" data-name="vis" data-pg="14" data-label="14 AI 사업에 기여할 방향">
+<section class="slide" data-name="vis" data-pg="15" data-label="15 AI 사업에 기여할 방향">
   <div class="glow" style="--o:.14;width:820px;height:820px;right:-260px;top:300px;--c:var(--brand)"></div>
   <h2 class="ttl"><span class="m">AI 사업에</span> 기여할 방향</h2>
   <div class="abs rows" style="left:144px;top:288px;width:1632px;gap:16px">
@@ -713,7 +748,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 15 지역 산업으로 넓히기 ================= -->
-<section class="slide" data-name="reg" data-pg="15" data-label="15 광주 · 전남 산업에 맞춘 AI 콘텐츠">
+<section class="slide" data-name="reg" data-pg="16" data-label="16 광주 · 전남 산업에 맞춘 AI 콘텐츠">
   <div class="glow" style="--o:.16;width:900px;height:900px;left:-240px;bottom:-380px;--c:var(--sky)"></div>
   <div class="glow" style="--o:.14;width:860px;height:860px;right:-240px;top:-300px;--c:var(--violet);animation-duration:22s"></div>
   <h2 class="ttl"><span class="m">광주 · 전남 산업에</span> 맞춘 AI 콘텐츠</h2>
@@ -733,7 +768,7 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
 </section>
 
 <!-- ================= 16 마무리 ================= -->
-<section class="slide fin" data-name="fin" data-pg="16" data-label="16 마무리" data-blade>
+<section class="slide fin" data-name="fin" data-pg="17" data-label="17 마무리" data-blade>
   <canvas class="dust" width="1920" height="1080"></canvas>
   <div class="glow" style="--o:.2;width:900px;height:900px;left:-200px;bottom:-400px;--c:var(--sky)"></div>
   <div class="glow" style="--o:.2;width:900px;height:900px;right:-200px;top:-300px;--c:var(--violet);animation-duration:22s"></div>
