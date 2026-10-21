@@ -206,7 +206,12 @@ html[data-theme="dark"] .bz>.core{box-shadow:inset 0 1px 1px rgba(255,255,255,.1
 .rows .d{font-size:28px;color:var(--sub);margin-top:6px;font-weight:500;line-height:1.3;white-space:nowrap}
 
 /* 흐름(세로 레일 · 02) */
-.flow{display:grid;gap:52px}
+.flow{display:grid;gap:36px}
+/* 02 수상 · 자격: 같은 단계에 두 줄이 함께 */
+.quals{display:grid;gap:14px}
+.quals .qr{display:flex;align-items:center;gap:12px}
+.quals .ql{flex:0 0 140px;font-size:24px;font-weight:700;color:var(--sub);white-space:nowrap}
+.quals .tag{font-size:24px}
 .flow .st{position:relative;display:grid;grid-template-columns:80px 1fr;gap:30px;align-items:start}
 .flow .no{width:80px;height:80px;border-radius:50%;display:grid;place-items:center;font:800 34px Sora,Pretendard;color:#fff;background:var(--grad);box-shadow:0 10px 30px -8px rgba(30,107,255,.6);position:relative;z-index:1}
 .flow .lab{font-size:40px;font-weight:800;letter-spacing:-.03em;line-height:1.2;margin-top:4px;white-space:nowrap}
@@ -396,14 +401,15 @@ html.static .ctl,html.static .rot,html.static .hint{display:none}
   <h2 class="ttl"><span class="m">광고 현장을 아는</span> AI 서비스 개발자</h2>
   <figure class="photo" style="left:144px;top:300px;width:430px;height:610px" data-step="0" data-fx="tilt"><img src="assets/img/running.jpg" alt="달리는 송호영 (배번은 흐리게 처리)"></figure>
   <div class="abs flow" style="left:690px;top:300px;width:1086px">
-    <i class="rail" style="top:40px;height:560px" data-step="1" data-fx="drop"></i>
+    <i class="rail" style="top:40px;height:420px" data-step="1" data-fx="drop"></i>
     <div class="st" data-step="1" data-fx="rise" data-at=".1"><span class="no">1</span><div><div class="lab">전남대학교 경제학과<small>졸업</small></div><div class="desc">2018.03 ~ 2023.08</div></div></div>
     <div class="st" data-step="1" data-fx="rise" data-at=".25"><span class="no">2</span><div><div class="lab">YN컴퍼니<small>광고실행사 · 2024.10 ~ 2025.12</small></div><div class="desc">약 20개 업종 광고 기획부터 실행까지 · 웹디자인</div></div></div>
     <div class="st" data-step="1" data-fx="rise" data-at=".4"><span class="no">3</span><div><div class="lab">삼성 청년 SW·AI 아카데미 15기<small>2026 ~ 현재</small></div><div class="desc">AI · 웹 · 로봇 팀 프로젝트 3건 진행 · 공통 프로젝트 우수상 수상</div></div></div>
     <div class="st" data-step="1" data-fx="rise" data-at=".55"><span class="no">4</span><div><div class="lab">SSAFY 자율 창업트랙<small>진행 중</small></div><div class="desc">웹 에이전시 AX 프로젝트 기획 및 개발</div></div></div>
   </div>
-  <div class="abs" style="left:800px;top:864px;display:flex;align-items:center;gap:14px" data-step="2" data-fx="rise">
-    <span class="cap" style="font-weight:700;color:var(--sub);margin-right:6px">국가기술자격</span><span class="tag ok">웹디자인기능사</span><span class="tag ok">컴퓨터그래픽스운용기능사</span>
+  <div class="abs quals" style="left:800px;top:808px" data-step="2" data-fx="rise">
+    <div class="qr"><span class="ql">수상</span><span class="tag">SSAFY 공통 프로젝트 우수상</span><span class="tag">2026 뉴스빅데이터 해커톤 본선 진출</span></div>
+    <div class="qr"><span class="ql">국가기술자격</span><span class="tag ok">웹디자인기능사</span><span class="tag ok">컴퓨터그래픽스운용기능사</span></div>
   </div>
 </section>
 
