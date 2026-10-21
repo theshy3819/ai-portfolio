@@ -1,6 +1,6 @@
 {
   "version": "0.0.1",
   "configurations": [
-    { "name": "ai-portfolio", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--", "--port", "5175", "--strictPort"], "port": 5175 }
+    { "name": "ai-portfolio", "runtimeExecutable": "python", "runtimeArgs": ["-m", "http.server", "5175", "--bind", "127.0.0.1"], "port": 5175 }
   ]
 }
